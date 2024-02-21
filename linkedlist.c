@@ -1,11 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <stdarg.h>
-
-typedef struct linkedlistnode {
-	size_t data;
-	struct linkedlistnode *nextnode;
-} LLNODE;
+#include "linkedlist.h"
 
 LLNODE* createfirstnode (size_t data) {
 	LLNODE *node = (LLNODE*) malloc(sizeof(LLNODE));
