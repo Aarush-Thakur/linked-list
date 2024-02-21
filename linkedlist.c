@@ -1,6 +1,3 @@
-#ifndef LINKEDLIST_H
-#define LINKEDLIST_H
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdarg.h>
@@ -77,7 +74,6 @@ int deleteandfreenode(LLNODE *firstnode, size_t index) {
 	return 0;
 }
 
-// TODO: make a function to create a linked list (use variadic functions)
 LLNODE* createlinkedlist(size_t length, ...) {
 	if (length <= 0) return NULL;
 	
@@ -132,5 +128,3 @@ void print_linkedlist_section(LLNODE *firstnode, size_t startindex, size_t endin
 		if (currnode == NULL) break;
 	}
 }
-
-#endif /* LINKEDLIST_H */
